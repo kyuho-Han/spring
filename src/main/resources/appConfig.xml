@@ -11,7 +11,7 @@ www.springframework.org/schema/beans/spring-beans.xsd">
           class="hello.core.member.MemoryMemberRepository" />
     <bean id="orderService" class="hello.core.order.OrderServiceImpl">
         <constructor-arg name="memberRepository" ref="MemberRepository" />
-        <constructor-arg name="discountPolicy" ref="DiscountPolicy" />
+        <constructor-arg name="rateDiscountPolicy" ref="DiscountPolicy" />
     </bean>
     <bean id="discountPolicy" class="hello.core.discount.RateDiscountPolicy" />
 </beans>
